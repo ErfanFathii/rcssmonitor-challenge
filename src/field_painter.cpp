@@ -109,7 +109,7 @@ FieldPainter::drawBackGround( QPainter & painter ) const
 {
     // fill the whole region
     painter.fillRect( painter.window(),
-                      Qt::cyan/*Options::instance().fieldBrush()*/ );
+                      Qt::gray/*Options::instance().fieldBrush()*/ );
 }
 
 /*-------------------------------------------------------------------*/
