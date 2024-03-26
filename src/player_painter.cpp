@@ -127,6 +127,10 @@ PlayerPainter::draw( QPainter & painter )
 
     for ( int i = 0; i < rcss::rcg::MAX_PLAYER*2; ++i )
     {
+        if(i >= 3 && i <= 10)
+            continue;
+        if(i >= 14)
+            continue;
         drawAll( painter, disp->show_.players_[i], ball );
     }
 
@@ -250,8 +254,8 @@ PlayerPainter::drawBody( QPainter & painter,
     // decide status color
     if ( ! param.player_.isAlive() )
     {
-        return ;
-        //painter.setBrush( Qt::black );
+        //return ;
+        painter.setBrush( Qt::black );
     }
 
     if ( param.player_.isIllegalDefenseState()
