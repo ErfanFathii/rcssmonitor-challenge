@@ -250,7 +250,8 @@ PlayerPainter::drawBody( QPainter & painter,
     // decide status color
     if ( ! param.player_.isAlive() )
     {
-        painter.setBrush( Qt::black );
+        return ;
+        //painter.setBrush( Qt::black );
     }
 
     if ( param.player_.isIllegalDefenseState()
